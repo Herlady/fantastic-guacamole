@@ -1,18 +1,22 @@
 #include <iostream>
+#include<iocmath>
+#include<iomanip>
 
 using namespace std;
 
 int main()
 {
-    int a,b,c, answer;
-    cout << "Enter the first number" << endl;
-    cin >> a;
+    float a,b, answer;
+    float average;
+    cout << "Enter first number" << endl;
+    cin>> a;
     cout<< "Enter second number";
-    cin >> b;
-    cout<< "Enter the third number";
-    cin >> c;
-    answer = a*b*c;
-    cout<< "product of the three number"<< answer;
+    cin>> b;
+    answer = a+b;
+    average= answer/2;
+    cout<<"sum of the two numbers"<<answer;
+    cout<<std::setprecision(6);
+    cout<<"average of the two numbers"<<average;
 
     return 0;
 }
